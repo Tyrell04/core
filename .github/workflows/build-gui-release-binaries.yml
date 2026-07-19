@@ -56,6 +56,11 @@ jobs:
       - name: build tauri app and upload to github releases page
         uses: tauri-apps/tauri-action@v0
         env:
+          # Optimize the GUI binary for size; the asb/cli release binaries
+          # (build-release-binaries.yml) keep the default opt-level and
+          # their symbols for usable panic backtraces.
+          CARGO_PROFILE_RELEASE_OPT_LEVEL: z
+          CARGO_PROFILE_RELEASE_STRIP: symbols
           GITHUB_TOKEN: ${{ secrets.BOTTY_GITHUB_TOKEN }}
           APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
           APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}

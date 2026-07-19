@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import SlideTemplate from "./SlideTemplate";
-import imagePath from "assets/walletWithBitcoinAndMonero.png";
+import imagePath from "assets/walletWithBitcoinAndMonero.webp";
 import { IntroSlideProps } from "./SlideTypes";
 
 export default function Slide01_GettingStarted(props: IntroSlideProps) {

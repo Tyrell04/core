@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import SlideTemplate from "./SlideTemplate";
-import imagePath from "assets/groupWithChatbubbles.png";
+import imagePath from "assets/groupWithChatbubbles.webp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MatrixIcon from "renderer/components/icons/MatrixIcon";
 import LinkIconButton from "renderer/components/icons/LinkIconButton";
