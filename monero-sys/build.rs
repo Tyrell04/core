@@ -85,6 +85,11 @@ const EMBEDDED_PATCHES: &[EmbeddedPatch] = &[
         "Adds rawTxHex() to PendingTransaction in wallet2_api.h",
         "patches/eigenwallet_0005_pending_transaction_raw_tx_hex.patch"
     ),
+    embedded_patch!(
+        "0005-fix-command-line-mangling",
+        "Explicitly specify template parameters for bool add_arg specialization to fix Apple Clang mangling error",
+        "patches/0005-fix-command-line-mangling.patch"
+    ),
 ];
 
 /// Find the workspace target directory from OUT_DIR
